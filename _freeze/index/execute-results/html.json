@@ -1,0 +1,16 @@
+{
+  "hash": "57aeeb2c161d69e2025bbf2776ce950d",
+  "result": {
+    "markdown": "---\ntitle: \"An example Quarto project using Netlify's build plugin\"\n---\n\n\nThis is a minimal Quarto website built using [Netlify](https://netlify.com/)'s build plugin.\n\nTo learn more about Quarto websites, visit <https://quarto.org/docs/websites>.\n\nTo learn more about how to publish your Quarto websites to Netlify, visit <https://github.com/quarto-dev/netlify-plugin-quarto/>.\n\n## Computational content\n\nThis project uses Quarto's [freeze capabilities](https://quarto.org/docs/projects/code-execution.html#freeze), and has the `_freeze` directory under version control. \nThis way, computational content is not executed in CI.\n\n### Example: Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n::: {.cell-output-display}\n![Temperature and ozone level.](index_files/figure-html/fig-airquality-1.png){#fig-airquality width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

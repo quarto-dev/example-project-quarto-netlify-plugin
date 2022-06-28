@@ -1,0 +1,30 @@
+---
+title: "An example Quarto project using Netlify's build plugin"
+---
+
+This is a minimal Quarto website built using [Netlify](https://netlify.com/)'s build plugin.
+
+To learn more about Quarto websites, visit <https://quarto.org/docs/websites>.
+
+To learn more about how to publish your Quarto websites to Netlify, visit <https://github.com/quarto-dev/netlify-plugin-quarto/>.
+
+## Computational content
+
+This project uses Quarto's [freeze capabilities](https://quarto.org/docs/projects/code-execution.html#freeze), and has the `_freeze` directory under version control. 
+This way, computational content is not executed in CI.
+
+### Example: Air Quality
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{r}
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+
+library(ggplot2)
+
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess")
+```

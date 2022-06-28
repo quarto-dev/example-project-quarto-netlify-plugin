@@ -1,0 +1,22 @@
+project:
+  type: website
+
+execute:
+  freeze: true
+
+website:
+  title: "example-project-quarto-netlify-plugin"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
